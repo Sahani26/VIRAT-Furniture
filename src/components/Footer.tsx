@@ -72,7 +72,9 @@ export default function Footer({ onNavigate }: FooterProps) {
 
               <div className="flex items-center space-x-2.5">
                 <Phone className="h-4 w-4 text-brand-500 shrink-0" />
-                <span>+91 98765 43210</span>
+                <a href="tel:+919825177240" className="hover:text-brand-400 transition-colors">
+                  +91 98251 77240
+                </a>
               </div>
 
               <div className="flex items-center space-x-2.5">

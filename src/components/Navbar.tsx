@@ -109,11 +109,11 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               id="navbar-phone-btn"
-              href="tel:+919876543210"
+              href="tel:+919825177240"
               className="flex items-center space-x-1.5 text-xs font-semibold text-gray-700 bg-gray-50 border border-gray-200 py-2 px-3.5 rounded-lg hover:bg-gray-100 transition-colors"
             >
               <PhoneCall className="h-3.5 w-3.5 text-brand-600" />
-              <span>+91 98765 43210</span>
+              <span>+91 98251 77240</span>
             </a>
             <button
               id="navbar-cta-btn"
@@ -125,8 +125,15 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
             </button>
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden flex items-center">
+          {/* Mobile Menu Toggle & Instant Call */}
+          <div className="md:hidden flex items-center space-x-2.5">
+            <a
+              href="tel:+919825177240"
+              className="text-brand-850 hover:text-brand-950 p-2 rounded-xl bg-brand-50 hover:bg-brand-100 flex items-center justify-center border border-brand-100/60 transition-colors cursor-pointer"
+              title="Call Craft Expert"
+            >
+              <PhoneCall className="h-4 w-4 animate-pulse" />
+            </a>
             <button
               id="mobile-menu-toggle"
               onClick={() => setIsOpen(!isOpen)}
@@ -156,10 +163,13 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
             </button>
           ))}
           <div className="pt-4 border-t border-gray-100 flex flex-col space-y-2.5 px-3">
-            <div className="flex items-center space-x-2 text-gray-600 text-sm">
+            <a
+              href="tel:+919825177240"
+              className="flex items-center space-x-2 text-gray-700 text-sm hover:text-brand-850 font-semibold cursor-pointer"
+            >
               <PhoneCall className="h-4 w-4 text-brand-600" />
-              <span>Call Us: +91 98765 43210</span>
-            </div>
+              <span>Call Us: +91 98251 77240</span>
+            </a>
             <button
               id="mobile-nav-cta"
               onClick={() => handleNavClick('configurator')}
