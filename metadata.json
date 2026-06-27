@@ -1,0 +1,6 @@
+{
+  "name": "Virat Furniture",
+  "description": "Premium custom-designed wooden furniture and interior planning services, featuring an interactive configuration and quote builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
